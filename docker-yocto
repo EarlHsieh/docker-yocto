@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-IMAGE="earlhsieh/yocto"
+IMAGE="qhairs/yocto"
 
 
 # Setup options for connecting to docker host
