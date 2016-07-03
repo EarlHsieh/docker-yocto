@@ -14,6 +14,8 @@ RUN chmod a+x /usr/local/bin/repo
 # Create user "jenkins"
 RUN id jenkins 2>/dev/null || useradd --uid 1001 --create-home jenkins
 
+RUN ln -snf /bin/bash /bin/sh
+
 ENV USER yocto
 
 # Create a non-root user that will perform the actual build
