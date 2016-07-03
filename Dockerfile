@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 RUN apt-get update && apt-get install -y build-essential chrpath curl diffstat gcc-multilib gawk git-core libsdl1.2-dev texinfo unzip wget
 
 # Additional host packages required by poky/scripts/wic
-RUN apt-get install -y bzip2 dosfstools mtools parted syslinux tree python && \
+RUN apt-get install -y bzip2 dosfstools mtools parted syslinux tree python subversion cvs texi2html && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
